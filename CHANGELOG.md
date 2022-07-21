@@ -3,10 +3,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Released]
 
-## [9.3.0] 20210219
-- Release Kenneth
+## [9.3.0_GS1.2] 20210219
+- Release Konrad
 
-## [9.2.0.7]
+## [9.2.0.7_GS1.2]
 ### Added
 - Support for Device Groups Device Map (#10898)
 - Support for Eastron SDM72D-M three phase 100A Modbus energy meter (#10862)
@@ -23,7 +23,7 @@ All notable changes to this project will be documented in this file.
 - NeoPixelBus library from v2.6.0 to v2.6.1.4
 - ILI9341 library from Adafruit_ILI9341-1.2.0-Tasmota-1.0 to ILI9341-gemu-1.0
 
-## [9.2.0.6] 20210210
+## [9.2.0.6_GS1.2] 20210210
 ### Changed
 - Remove support for direct migration from versions before v8.1.0 (Doris)
 - ESP32 Increase number of switch GPIOs from 8 to 28
@@ -31,11 +31,11 @@ All notable changes to this project will be documented in this file.
 - Increase number of button GPIOs from 4 to 8
 - Preview of Berry language for Tasmota32
 
-## [9.2.0.5] 20210205
+## [9.2.0.5_GS1.2] 20210205
 ### Changed
 - ESP32 increase number of relay GPIOs from 8 to 28
 
-## [9.2.0.4] 20210204
+## [9.2.0.4_GS1.2] 20210204
 ### Added
 - Function ``AddLog`` to provide logging for up to 128 (LOGSZ) characters to save stack space
 - Commands ``ChannelRemap``, ``MultiPWM``, ``AlexaCTRange``, ``PowerOnFade``, ``PWMCT``, ``WhiteBlend`` and ``VirtualCT`` as synonyms for ``SetOption37, 68, 82, 91, 92, 105`` and ``106``
@@ -52,7 +52,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Maximum chars in ``AddLog_P`` logging restored from 128 to 700 (MAX_LOGSZ) to solve broken error messages
 
-## [9.2.0.3] 20210122
+## [9.2.0.3_GS1.2] 20210122
 ### Added
 - Support for time proportioned (``#define USE_TIMEPROP``) and optional PID (``#define USE_PID``) relay control (#10412)
 - Support rotary encoder on Shelly Dimmer (#10407)
@@ -80,7 +80,7 @@ All notable changes to this project will be documented in this file.
 - PubSubClient MQTT_SOCKET_TIMEOUT from 15 to 4 seconds
 - Domoticz fixed 2 decimals resolution by user selectable ``TempRes``, ``HumRes`` and ``PressRes`` resolutions
 
-## [9.2.0.2] 20210105
+## [9.2.0.2_GS1.2] 20210105
 ### Added
 - Support for ESP32 ``Module 3`` Odroid Go 16MB binary tasmota32-odroidgo.bin (#8630)
 - Command ``CTRange`` to specify the visible CT range the bulb is capable of (#10311)
@@ -107,7 +107,7 @@ All notable changes to this project will be documented in this file.
 - Maximum chars in ``AddLog_P`` logging reduced from 700 to 128 (LOGSZ) to enhance stability
 - Disabled ``USE_LIGHT`` light support for ZBBridge saving 17.6kB (#10374)
 
-## [9.2.0.1] 20201229
+## [9.2.0.1_GS1.2] 20201229
 ### Added
 - Milliseconds to console output (#10152)
 - Support for P9813 RGB Led MOSFET controller (#10104)
@@ -135,18 +135,8 @@ All notable changes to this project will be documented in this file.
 - Compile error when ``#ifdef USE_IR_RECEIVE`` is disabled regression from 9.1.0.2
 - Prometheus memory leak (#10221)
 
-## [9.2.0] 20201221
-### Fixed Backported
-- Shutter stop issue (#10170)
-- Scripter script_sub_command (#10181)
-- Scripter JSON variable above 32 chars (#10193)
-- Shelly Dimmer power on state (#10154, #10182)
-- Wemo emulation for single devices (#10165, #10194)
-- ESP32 LoadStoreError when using ``#define USER_TEMPLATE`` (#9506)
-- Compile error when ``#ifdef USE_IR_RECEIVE`` is disabled regression from 9.1.0.2
-
-## [9.2.0] 20201216
-- Release Julie
+## [9.2.0_GS1.2] 20210720
+- Release Jonah
 
 ## [9.1.0.2] 20201216
 ### Added

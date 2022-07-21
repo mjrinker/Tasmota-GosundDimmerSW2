@@ -718,7 +718,9 @@ void ResponseAppendFeatures(void)
 #if defined(USE_DISPLAY) && defined(USE_DISPLAY_TM1637)
     feature7 |= 0x40000000;
 #endif
-//    feature7 |= 0x80000000;
+#if defined(USE_LIGHT) && defined(USE_GOSUND_DIMMER)
+    feature7 |= 0x00008000;  // xdrv_84_gosund.ino
+#endif
   }
 
   static uint32_t feature8 = 0x00000000;

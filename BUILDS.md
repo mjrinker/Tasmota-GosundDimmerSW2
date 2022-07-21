@@ -46,6 +46,7 @@
 | USE_SHUTTER           | - | - | x | x | - | - | - |
 | USE_DEEPSLEEP         | - | - | x | - | x | - | - |
 | USE_EXS_DIMMER        | - | - | x | x | - | - | - |
+| USE_GOSUND_DIMMER     | - | - | x | x | - | - | - |
 | USE_DEVICE_GROUPS     | - | - | x | - | - | - | - |
 | USE_PWM_DIMMER        | - | - | x | x | - | - | - |
 | USE_KEELOQ            | - | - | - | - | - | - | - |
