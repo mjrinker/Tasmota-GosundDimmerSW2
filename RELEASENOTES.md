@@ -56,7 +56,11 @@ The attached binaries can also be downloaded from http://ota.tasmota.com/tasmota
 
 [Complete list](BUILDS.md) of available feature and sensors.
 
-## Changelog v9.2.0 Julie
+## Support for Gosund Dimmer SW2
+
+Added driver for Gosund Dimmer Smart Switch SW2
+
+## Changelog v9.2.0_GS1.2 Jonah
 ### Added
 - Command ``SetOption115 1`` to enable ESP32 MiBle
 - Command ``SetOption116 1`` to disable auto-query of zigbee light devices (avoids network storms with large groups)
@@ -82,6 +86,7 @@ The attached binaries can also be downloaded from http://ota.tasmota.com/tasmota
 - Fallback NTP server from x.pool.ntp.org if no ntpservers are configured
 - Optional CCloader support for CC25xx Zigbee or CC26xx BLE by Christian Baars [#9970](https://github.com/arendst/Tasmota/issues/9970)
 - Letsencrypt R3 in addition to X3 CA [#10086](https://github.com/arendst/Tasmota/issues/10086)
+- Add support for Gosund Dimmer SW2
 
 ### Breaking Changed
 - KNX DPT9 (16-bit float) to DPT14 (32-bit float) by Adrian Scillato [#9811](https://github.com/arendst/Tasmota/issues/9811) [#9888](https://github.com/arendst/Tasmota/issues/9888)
