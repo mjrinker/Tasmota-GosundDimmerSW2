@@ -1,7 +1,9 @@
 ![Tasmota logo](/tools/logo/TASMOTA_FullLogo_Vector.svg)
 
-Alternative firmware for [ESP8266](https://en.wikipedia.org/wiki/ESP8266) based devices with **easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX**.
-_Written for PlatformIO with limited support for Arduino IDE._
+This is a fork of [arendst/Tasmota](https://github.com/arendst/Tasmota), an alternative firmware for [ESP8266](https://en.wikipedia.org/wiki/ESP8266) based devices with **easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX**.
+_Written for PlatformIO with limited support for Arduino IDE._ **This fork provides support for the Gosund Dimmer Switch SW2.**
+
+The support for the Gosund Dimmer SW2 was taken from Gabriel Gooslin's [work](https://github.com/gbg108/Tasmota) and updated here to more recent versions of Tasmota.
 
 [![GitHub version](https://img.shields.io/github/release/arendst/Tasmota.svg)](https://github.com/arendst/Tasmota/releases/latest)
 [![GitHub download](https://img.shields.io/github/downloads/arendst/Tasmota/total.svg)](https://github.com/arendst/Tasmota/releases/latest)
@@ -155,6 +157,7 @@ People helping to keep the show on the road:
 - Paul Diem for UDP Group communication support
 - Jörg Schüler-Maroldt for his initial ESP32 port
 - Javier Arigita for his thermostat driver
+- Gabriel Gooslin for doing [the work](https://github.com/gbg108/Tasmota) to add support for the Gosund Dimmer SW2, which I just took and updated
 - Many more providing Tips, Wips, Pocs, PRs and Donations
 
 ## License
