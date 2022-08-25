@@ -38,7 +38,7 @@ struct Gosund
   uint8_t powerLedPin = 12;
   uint8_t lockLedPin = 13;
   uint8_t rangeLow = 0x7F;
-  uint8_t rangeHigh = 0xEB;
+  uint8_t rangeHigh = 0xD4;
 
   /* Switch state */
   int32_t currentPower = -1;
@@ -115,6 +115,7 @@ void GosundSynchronize(void) {
   bool syncNeeded = false;
   uint32_t stepDiff = 0;
   uint32_t stepBrightness = 0;
+  Settings.dimmer_step = 1;
   /* If still locked out, return */
   if (GosundCheckLockout()) return;
 
